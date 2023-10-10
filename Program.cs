@@ -4,7 +4,6 @@
     Console.Write(message);
     string[] promtArray = Console.ReadLine().Split(' ');
     Console.Clear();
-
     return promtArray;
 }
 
@@ -34,6 +33,7 @@ void PrintArray(string message, string[] array)
     }
     Console.WriteLine();
 }
+
 PrintArray("Исходный массив:", inputArray);
 PrintArray("Новый массив:   ", OutputArray(inputArray));
 
