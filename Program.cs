@@ -26,15 +26,17 @@ string[] OutputArray(string[] array)
 
 void PrintArray(string message, string[] array)
 {
-    Console.Write(message + " ");
-    foreach (string arr in array)
-    {
-        Console.Write(arr + " ");
-    }
-    Console.WriteLine();
+    Console.Write(message);
+    Console.WriteLine(string.Join(" || ", array));
+    // Console.Write(message + " ");
+    // foreach (string arr in array)
+    // {
+    //     Console.Write(arr + " ");
+    // }
+    // Console.WriteLine();
 }
 
-PrintArray("Исходный массив:", inputArray);
-PrintArray("Новый массив:   ", OutputArray(inputArray));
+PrintArray("Исходный массив: ", inputArray);
+PrintArray("Новый массив:    ", OutputArray(inputArray));
 
 Console.ReadKey();
