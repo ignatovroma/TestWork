@@ -27,6 +27,7 @@ string[] OutputArray(string[] array)
 void PrintArray(string message, string[] array)
 {
     Console.Write(message);
+    if (array.Length == 0) Console.WriteLine("пустой массив");
     Console.WriteLine(string.Join(" || ", array));
     // Console.Write(message + " ");
     // foreach (string arr in array)
