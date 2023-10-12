@@ -2,7 +2,7 @@
 {
     Console.Clear();
     Console.Write(message);
-    string[] promtArray = Console.ReadLine().Split(' ');
+    string[] promtArray = Console.ReadLine()!.Split(' ');
     Console.Clear();
     return promtArray;
 }
